@@ -2,6 +2,7 @@ import ProjectCard from "../components/ProjectCard";
 import GreenPetsHome from "../assets/images/greenpets_home.png";
 import TuningCollect from "../assets/images/tuningCollect.png";
 import WatchDock from "../assets/images/watchDock.png";
+import useScreenSize from "../Hooks/useScreenSize";
 
     interface Project {
         title: string,
@@ -11,7 +12,7 @@ import WatchDock from "../assets/images/watchDock.png";
         links: string[]
     }
 export default function Projects(){
-
+    const currentScreenSize = useScreenSize();
     const greenPets : Project = {
         title: "GreenPets",
         imgPath: GreenPetsHome,
@@ -34,9 +35,9 @@ export default function Projects(){
         links: ["https://github.com/crisdevs/Tuning_Collect"]
     }
     return(
-        <section className = "w-[85%] mt-[100px]">
-            <h2 className = "mb-[50px]">PROJECTS</h2>
-        <div className = "flex flex-col">
+        <section id ="projects" className = "mt-[100px] lg:w-[90%] lg:h-[100%]">
+            {currentScreenSize.width < 1024 && <h2 className = "mb-[50px]">PROJECTS</h2>}
+        <div className = "flex flex-col items-center md:flex-row md:flex-wrap md:justify-between lg:justify-center xl:justify-between xl:gap-[26px]">
         <ProjectCard project = {greenPets} />
         <ProjectCard project = {tuningCollect} />
         <ProjectCard project = {watchdock} />
