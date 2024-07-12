@@ -6,7 +6,7 @@ export default function About (){
     return(
             <section id= "about" className = "mt-[50px] lg:w-[90%] lg:h-screen">
                 {currentScreenSize.width < 1024 && <h2>ABOUT</h2>}
-                <img className = "w-[75%] rounded-md mx-auto" src="../src/assets/images/me.jpg"/>
+                {currentScreenSize.width >= 1024 && <img className = "w-[75%] rounded-md mx-auto" src="../src/assets/images/me.jpg"/>}
                 <p className = "mt-[20px]">Hello there friend! I am a software engineer based in New York who comes
                    from a background in IT support and product testing driven to make stunning, impactful
                    web applications. Technologies that I am proficient include Javascript, React, Typescript,

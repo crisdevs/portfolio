@@ -5,6 +5,7 @@ import Projects from './sections/Projects';
 import NavBar from './components/NavBar';
 import {useState} from "react";
 import { createContext } from 'react';
+import Experience from './sections/Experience';
 
 export const SectionContext = createContext("about");
 
@@ -17,10 +18,14 @@ function App() {
     // console.log(Y);
     if(Y > 260){
       setShowNav(true);
-      setCurrentSection("projects");
     }
     else{
       setShowNav(false);
+    }
+    if(Y >= 700){
+      setCurrentSection("projects");
+    }
+    else{
       setCurrentSection("about");
     }
     console.log(window.scrollY);
@@ -35,6 +40,7 @@ function App() {
     <div className = "w-[85%] lg:w-[50%] lg:overflow-y-scroll">
       <About />
       <Projects />
+      <Experience />
     </div>
     </SectionContext.Provider>
     </div>

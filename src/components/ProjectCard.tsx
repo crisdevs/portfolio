@@ -1,13 +1,7 @@
 import { CiGlobe } from "react-icons/ci";
 import { FaGithub } from "react-icons/fa";
+import { Project } from "../types";
 
-interface Project {
-    title: string,
-    imgPath: string,
-    tech: string[],
-    description: string,
-    links: string[]
-}
 export default function ProjectCard (props:{project : Project}){
     console.log("project render");
     return(
