@@ -22,11 +22,17 @@ function App() {
     else{
       setShowNav(false);
     }
-    if(Y >= 700){
+
+
+
+    if(Y < 700){
+      setCurrentSection("about");
+    }
+    else if(Y >= 700 && Y < 2250){
       setCurrentSection("projects");
     }
-    else{
-      setCurrentSection("about");
+    else if(Y >= 2250){
+      setCurrentSection("experience");
     }
     console.log(window.scrollY);
   };

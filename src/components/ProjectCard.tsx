@@ -6,7 +6,7 @@ export default function ProjectCard (props:{project : Project}){
     console.log("project render");
     return(
         <div className = "mb-[40px] max-w-[275px]">
-          <img className = "rounded-t-md" src = {props.project.imgPath} ></img>
+          <img className = "rounded-t-md h-[233px]" src = {props.project.imgPath} />
           <div className = " flex flex-col bg-[#191919] rounded-b-md h-[450px] p-[15px]">
           <h3 className = "text-2xl mb-[20px]">{props.project.title}</h3>
           <p>{props.project.description}</p>
