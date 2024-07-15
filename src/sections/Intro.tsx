@@ -24,9 +24,9 @@ export default function Intro (){
             <h2 className = "font-medium text-2xl mb-[15px]" >Software Engineer</h2>
             <p className = "w-[90%]">Bringing my love for creativity and problem solving together!</p>
             <ul className = "flex justify-between mt-[20px] lg:justify-start">
-                <li className = "text-[40px] mr-[20px] lg:mr-[50px]"><a href = "https://github.com/crisdevs"><FaGithub /></a></li>
-                <li className = "text-[40px] mr-[20px] lg:mr-[50px]"><a href = "https://www.linkedin.com/in/criscorr/"><FaLinkedin /></a></li>
-                <li className = "text-[40px]" ><a href = "mailto:crisdevs95@gmail.com"><MdEmail /></a></li>
+                <li className = "text-[40px] mr-[20px] lg:mr-[50px] hover:text-[#96141a]"><a href = "https://github.com/crisdevs"><FaGithub /></a></li>
+                <li className = "text-[40px] mr-[20px] lg:mr-[50px] hover:text-[#96141a]"><a href = "https://www.linkedin.com/in/criscorr/"><FaLinkedin /></a></li>
+                <li className = "text-[40px] hover:text-[#96141a]" ><a href = "mailto:crisdevs95@gmail.com"><MdEmail /></a></li>
             </ul>
             {currentScreenSize.width >= 1024 && <SectionDisplay/>}
             </div>

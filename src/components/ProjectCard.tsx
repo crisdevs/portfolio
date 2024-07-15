@@ -16,9 +16,9 @@ export default function ProjectCard (props:{project : Project}){
             <div className = "flex justify-between mt-[40px]">
                 {props.project.links.map((link, i) => {
                     if(i === 1){
-                        return <a key = {`link-${i}`} className = " bg-[#96141a] p-[10px] flex items-center rounded" href = {link}> <CiGlobe className = "mr-[4px]"/> Live Site</a>
+                        return <a key = {`link-${i}`} className = " bg-[#96141a] hover:bg-white hover:text-black p-[10px] flex items-center rounded" href = {link}> <CiGlobe className = "mr-[4px]"/> Live Site</a>
                     }
-                    return (<a key={`link-${i}`} className = "bg-[#96141a] p-[10px] flex items-center br-[8px] rounded" href = {link}><FaGithub className = "mr-[4px]"/> Github</a>);
+                    return (<a key={`link-${i}`} className = "bg-[#96141a] p-[10px] hover:bg-white hover:text-black flex items-center br-[8px] rounded" href = {link}><FaGithub className = "mr-[4px]"/> Github</a>);
                 })}             
             </div>
             </div>
