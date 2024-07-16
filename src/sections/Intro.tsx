@@ -2,21 +2,10 @@ import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { MdEmail } from "react-icons/md";
 import SectionDisplay from "../components/SectionDisplay";
-import { useState } from "react";
 import useScreenSize from "../Hooks/useScreenSize";
-
-// import "../styles/index.css";
 
 export default function Intro (){
     const currentScreenSize = useScreenSize();
-//     const y = window.scrollY;
-//    if(y > 350){
-//     console.log("You are on projects");
-
-//    }
-//    else{
-//     console.log("You are on intro");
-//    }
     return(
         <header className = "pt-[50px] w-[85%] lg:sticky lg:top-0 lg:left-[25px] lg:self-start lg:w-[50%] lg:flex lg:justify-center">
             <div>
