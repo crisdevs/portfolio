@@ -4,7 +4,6 @@ import { projects } from "../Entries";
 
 export default function Projects(){
     const currentScreenSize = useScreenSize();
- 
     return(
         <section id ="projects" className = "mt-[100px] lg:w-[90%] lg:h-[100%]">
             {currentScreenSize.width < 1024 && <h2 className = "mb-[50px]">PROJECTS</h2>}

@@ -7,7 +7,6 @@ export default function SectionDisplay(){
     const selectedStyles = `bg-white text-black rounded transition-all duration-250 pl-[30px]`;
     const unSelectedStyles = `bg-transparent text-white transition-all duration-250 pl-[0px]`;
     const hoverStyles = `hover:bg-white hover:text-black hover:rounded hover:transition-all hover:duration-250 hover:pl-[30px]`;
-    console.log(currentSection);
     return(
         <div>
             <ul className = "mt-[140px]">

@@ -12,19 +12,14 @@ export const SectionContext = createContext("about");
 function App() {
   const [showNav, setShowNav] = useState(false);
   const [currentSection, setCurrentSection] = useState("about");
-  console.log("app");
   window.onscroll = function(){
     let Y = window.scrollY;
-    // console.log(Y);
     if(Y > 260){
       setShowNav(true);
     }
     else{
       setShowNav(false);
     }
-
-
-
     if(Y < 700){
       setCurrentSection("about");
     }
@@ -34,11 +29,9 @@ function App() {
     else if(Y >= 2250){
       setCurrentSection("experience");
     }
-    console.log(window.scrollY);
   };
   
   return (
-
     <div className = "bg-[#111111] text-white font-main flex flex-col items-center lg:flex-row">
     <SectionContext.Provider value = {currentSection}>
     {showNav && <NavBar />}

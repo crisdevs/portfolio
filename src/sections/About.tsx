@@ -2,7 +2,6 @@ import useScreenSize from "../Hooks/useScreenSize";
 
 export default function About (){
     const currentScreenSize = useScreenSize();
-    console.log(`This is the screen size: ${currentScreenSize.width}`);
     return(
             <section id= "about" className = "mt-[50px] lg:w-[90%] lg:h-screen">
                 {currentScreenSize.width < 1024 && <h2>ABOUT</h2>}
