@@ -10,7 +10,7 @@ export const projects : Project[] = [
         imgPath: GreenPetsHome,
         tech: ["React", "Typescript", "Redux", "Styled-Components"],
         description: "Answer a series of questions that will help you find a list of plants most ideal for you. The Perenual API was utilized for the plant data. ",
-        links: ["https://greenpets.netlify.app/", "https://github.com/Los-Terremotos/GreenPets"]
+        links: ["https://github.com/Los-Terremotos/GreenPets", "https://greenpets.netlify.app/"]
     },
     {
         title: "Watchdock",
